@@ -1,62 +1,175 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>
-		歌詞
-	</title>
-<style> 
-body{/*background: lightgrey;*/ background-image: url("bg.jpg");}
-h1{color:burlywood;text-align: center; padding:50px; margin:50px; background-color: lemonchiffon;}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的愛好</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 5%;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+    }
 
-<h1 style="font-size:160%;">我就想你 </h1>
+    h1#hobbies-title {
+      color: #fff;
+      background-color: #FFB6C1;
+      text-align: center;
+      padding: 40px;
+      margin: 50px auto;
+      font-size: 3em;
+      font-weight: bold;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+      width: 80%;
+    }
 
-<h2>
-<p>我想要你在我身邊
-但距離怎麼看不清
-一陣秋風竄進了被窩
-又閉上眼睛
-自己說 原諒那些我們錯過的事
-心隨著時間滴答在漂流
-看著不同的生活裡
-找尋共同的記憶
-試著學會再相信愛情
-忘記了什麼時候
-開始把你說的每一句話放在心上
-才發現原來很久沒這樣</p>
-<p>閉上眼看天空
-看不見記憶中那種浪漫
-而是那說不出
-我真的好喜歡你 的遺憾
-不是我懷疑 而是我在意
-我只是在意你有沒有一樣在意我
-到頭來 想著你的笑容是我最幸福的時候</p>
-<p>又同樣回到
-上一個下不停的大雨中
-左邊肩膀這次沒濕透
-我戴著耳機
-躲避著不同世界的人群
-再一次 聽可能和妳相同的旋律
-你在哪裡 我想你
-簡單的幾句不夠表明
-將所有思念藏在這支筆
-習慣了你習慣的
-每個傷 每個步調 每個你不想要
-人走了一樣什麼都還在</p>
-<p>閉上眼看天空
-看不見記憶中那種浪漫
-而是那說不出
-我真的好喜歡你 的遺憾
-不是我懷疑 而是我在意
-我只是在意你有沒有一樣在意我
-到頭來 想著你的笑容是我最幸福的時候</p>
-<p>
-閉上眼看天空
-看不見記憶中那種浪漫
-而是那說不出
-我真的真的好喜歡 好喜歡你呦
-就算是過了很久
-回到那依舊
-情不自禁的想著你的笑容</p>
-</h2>
+    .navigation {
+      background-color: #FFDAB9;
+      margin: 40px auto;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation a {
+      color: #DC143C;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #FFEFD5;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: #FF69B4;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .content {
+      background-color: rgba(255, 245, 235, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    h2, h3 {
+      color: #FF6347;
+      font-size: 2em;
+      font-weight: bold;
+      text-shadow: 1px 1px white;
+      text-align: center;
+    }
+
+    ul {
+      list-style-type: disc;
+      font-size: 1.2em;
+      color: #444;
+      padding-left: 40px;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    section {
+      background-color: rgba(255, 228, 225, 0.95);
+      padding: 30px;
+      border-radius: 15px;
+      max-width: 900px;
+      margin: 30px auto;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    footer {
+      background-color: #FFF0F5;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    footer h6 {
+      text-align: center;
+    }
+
+    @media screen and (max-width: 700px) {
+      h1#hobbies-title {
+        font-size: 2em;
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 id="hobbies-title">我的愛好</h1>
+  </header>
+
+  <div class="navigation">
+    <a href="index.html">首頁</a>
+   <a href="file:///Users/wendy/Desktop/413000802/index2.html">課表</a>
+<a href="file:///Users/wendy/Desktop/413000802/index3.html">經歷</a>
+  </div>
+
+  <div class="content">
+    <h2>動漫</h2>
+    <ul>
+      <li>ハイキュー!! 排球少年 Haikyu!</li>
+      <li>86-不存在的戰區</li>
+      <li>葬送的芙莉蓮</li>
+      <li>只想告訴你</li>
+      <li>躍動青春</li>
+      <li>.........</li>
+      <p>正在看</p>
+      <li>進擊的巨人</li>
+    </ul>
+  </div>
+
+  <section>
+    <h3>藝人＆團體</h3>
+    <ul>
+      <li>Seventeen</li>
+      <li>Boynextdoor</li>
+      <li>嚴浩翔</li>
+      <li>李浩瑋</li>
+      <li>胡凱兒</li>
+      <li>......</li>
+    </ul>
+  </section>
+
+  <footer>
+    <h6 style="color:#DC143C; font-size:1.5em;">歌</h6>
+    <ul>
+      <li>Fallin flower</li>
+      <li>花季</li>
+      <li>我就想你</li>
+      <li>心做し</li>
+      <li>Avid</li>
+      <li>......</li>
+    </ul>
+  </footer>
+</body>
+</html>

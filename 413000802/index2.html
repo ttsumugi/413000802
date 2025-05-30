@@ -1,47 +1,139 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<title>
-		課表
-	</title>
-<style> 
-	table {border-collapse: collapse; width: 100%;}
-th, td {text-align: left; padding: 8px;}
+  <meta charset="UTF-8">
+  <title>課表</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 5%;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      color: #333;
+    }
 
-tr:nth-child(even){background-color: #f2f2f2}
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: #FFEFD5;
+      padding: 10px;
+      border-radius: 10px;
+      margin: 20px auto;
+      max-width: 900px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
 
-th {background-color: #04AA6D;color: white;}
-body{/*background: lightgrey;*/ background-image: url("bg.jpg");}
-</style>
-</head>	
+    nav a {
+      color: #DC143C;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5em;
+      color: #FF6347;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      border-radius: 15px;
+      max-width: 600px;
+      margin: 30px auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    th, td {
+      text-align: center;
+      padding: 12px;
+      font-size: 1em;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    th {
+      background-color: #04AA6D;
+      color: white;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      background-color: #E6F2EF;
+    }
+
+    @media screen and (max-width: 700px) {
+      h1 {
+        font-size: 1.8em;
+        padding: 15px;
+      }
+
+      table, th, td {
+        font-size: 0.85em;
+      }
+
+      nav {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
 <body>
-	<ol>
-	<li><h1 style="color:Tomato;" style="font-size:160%;">113下學期課表 <p> &#128509; </p> </h1><table border=1>
+  <nav>
+    <a href="file:///Users/wendy/Desktop/413000802/index.html">首頁</a>
+    <a href="file:///Users/wendy/Desktop/413000802/index3.html">我的經歷</a>
+    <a href="file:///Users/wendy/Desktop/413000802/index4.html">愛好</a>
+  </nav>
 
-		<tr><td></td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td></tr>
-		<tr><td>第一節</td><td></td><td>體育</td><td></td><td>圖書館史</td><td>英文</td></tr>
-		<tr><td>第二節</td><td></td><td>體育</td><td></td><td>圖書館史</td><td>英文</td></tr>
-		<tr><td>第三節</td><td>台灣海洋歷史與文化</td><td></td><td>參考資源與服務</td><td>圖書資訊傳播導論</td><td>全民國防教育軍事訓練</td></tr>
-		<tr><td>第四節</td><td>台灣海洋歷史與文化</td><td></td><td>參考資源與服務</td><td>圖書資訊傳播導論</td><td>全民國防教育軍事訓練</td></tr>
-		<tr><td></td><td></td><td></td><td></td><td></td></tr>
-		<tr><td>第六節</td><td>社團學習與實作</td><td>校園與社區服務學習</td><td>網路概論</td><td>中國語文能力表達</td><td>參考資源與服務</td></tr>
-		<tr><td>第七節</td><td>社團學習與實作</td><td>校園與社區服務學習</td><td>網路概論</td><td>中國語文能力表達</td><td>參考資源與服務</td></tr>
-		<tr><td>第八節</td><td>圖書館學統計</td><td>資訊組織</td><td></td><td></td><td>英文</td></tr>
-		<tr><td>第九節</td><td>圖書館學統計</td><td>資訊組織</td><td></td><td></td><td>英文</td></tr>
-		<tr><td>第十節</td><td></td><td>資訊組織</td><td></td><td></td><td></td></tr>
-	</table border=1></li>
-	<li><h2><a href="file:///Users/wendy/Desktop/413000802/index.html"  style="color:Violet;">自我介紹</a></h2></li>
-	<li><h3><a href="file:///Users/wendy/Desktop/413000802/index3.html"  style="color:Violet;">我的經歷</a></h3></li>
-	<li><h4><a href="file:///Users/wendy/Desktop/413000802/index4.html"  style="color:Violet;">歌詞</a></h4></li>
-	<li><h4 style="color:orange;">新增三個沒教過的tags</h4></li>
-	<ul style="color:orange;">
-		<li>html colors</li>
-		<li>html styles</li>
-		<li>html emojis</li>
-		
-	</ul>
-</ol>
+  <h1>113下學期課表</h1>
 
+  <table border="1">
+    <tr>
+      <td></td><td>星期一</td><td>星期二</td><td>星期三</td><td>星期四</td><td>星期五</td>
+    </tr>
+    <tr>
+      <td>第一節</td><td></td><td>體育</td><td></td><td>圖書館史</td><td>英文</td>
+    </tr>
+    <tr>
+      <td>第二節</td><td></td><td>體育</td><td></td><td>圖書館史</td><td>英文</td>
+    </tr>
+    <tr>
+      <td>第三節</td><td>台灣海洋歷史與文化</td><td></td><td>參考資源與服務</td><td>圖書資訊傳播導論</td><td>全民國防教育軍事訓練</td>
+    </tr>
+    <tr>
+      <td>第四節</td><td>台灣海洋歷史與文化</td><td></td><td>參考資源與服務</td><td>圖書資訊傳播導論</td><td>全民國防教育軍事訓練</td>
+    </tr>
+    <tr>
+      <td></td><td></td><td></td><td></td><td></td><td></td>
+    </tr>
+    <tr>
+      <td>第六節</td><td>社團學習與實作</td><td>校園與社區服務學習</td><td>網路概論</td><td>中國語文能力表達</td><td>參考資源與服務</td>
+    </tr>
+    <tr>
+      <td>第七節</td><td>社團學習與實作</td><td>校園與社區服務學習</td><td>網路概論</td><td>中國語文能力表達</td><td>參考資源與服務</td>
+    </tr>
+    <tr>
+      <td>第八節</td><td>圖書館學統計</td><td>資訊組織</td><td></td><td></td><td>英文</td>
+    </tr>
+    <tr>
+      <td>第九節</td><td>圖書館學統計</td><td>資訊組織</td><td></td><td></td><td>英文</td>
+    </tr>
+    <tr>
+      <td>第十節</td><td></td><td>資訊組織</td><td></td><td></td><td></td>
+    </tr>
+  </table>
 </body>
 </html>

@@ -1,52 +1,175 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-Hant">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<meta name="viewport" content="width=device-width,initial=1.0">
-	<title>
-		第一版學習歷程網站
-	</title>
-		<style>
-		h1{color:orange;text-align: center; padding:50px; margin:50px; background-image: url(pad.jpg);} 
-		body{/*background: lightgrey;*/ background-image: url("bg.jpg");}
-		.navigation{margin: 40px; background-color: bisque; padding:5px; margin: 80px; } 
-		.navigation:hover{background-color: honeydew;}
-		#special{color:honeydew; border-style: dotted;}
-img {border: 20px solid #ddd; border-radius: 4px;padding: 5px;width: 150px; border-color: white;}
-	body{margin: 0%; padding: 5%;}
-	header{text-align: center; padding: 20px;}
-	nav{display: flex; flex-direction: row; background-color:bisque; }
-	nav a{padding: 14px 20px; text-decoration: none;}
-	.container{display: flex;flex-wrap: wrap;}
-	aside{flex:700px; background-color: beige;padding: 10px;}
-	section{flex:300px; background-color: bisque ;padding: 15px;}
-	footer{flex:1200px;background-color: beige; padding: 10px; text-align: center;}
-	@media screen and (max-width: 700px) {nav, .container{flex-direction: column;}}
-	</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第一版學習歷程網站</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 5%;
+      font-family: "Microsoft JhengHei", sans-serif;
+      background-image: url("bg.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      color: #333;
+    }
+
+    h1#special {
+      color: #444;
+      background-color: peachpuff;
+      text-align: center;
+      padding: 40px;
+      margin: 50px auto;
+      font-size: 3em;
+      font-weight: bold;
+      border-radius: 25px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      text-shadow: 1px 1px white;
+      width: 80%;
+    }
+
+    .navigation {
+      background-color: bisque;
+      margin: 40px auto;
+      padding: 10px;
+      text-align: center;
+      border-radius: 10px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .navigation a {
+      color: hotpink;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    .navigation:hover {
+      background-color: honeydew;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background-color: bisque;
+      padding: 10px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    nav a {
+      color: hotpink;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    aside, section {
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    aside {
+      flex: 2;
+      background-color: rgba(255, 228, 196, 0.95);
+    }
+
+    section {
+      flex: 1;
+      background-color: rgba(255, 228, 181, 0.95);
+      text-align: center;
+    }
+
+    footer {
+      background-color: beige;
+      padding: 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 40px;
+    }
+
+    img {
+      border: 10px solid white;
+      border-radius: 15px;
+      padding: 5px;
+      width: 150px;
+      height: 200px;
+      margin-top: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      font-size: 1.2em;
+      color: #333;
+    }
+
+    li {
+      margin: 10px 0;
+      line-height: 1.6;
+    }
+
+    @media screen and (max-width: 700px) {
+      nav, .container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1#special {
+        font-size: 2em;
+        padding: 30px;
+      }
+    }
+  </style>
 </head>
-<header><h1 style="font-size:190%; color:tomato;" id="special"  >自我介紹</h1></header>
+<body>
+  <header>
+    <h1 id="special">自我介紹</h1>
+  </header>
 
-<div class="navigation" style="color:honeydew;"><a href="https://g.co/kgs/AUe468M">Kaohsiung</a> | <a href="https://g.co/kgs/qfu2G1v">Taipei</a></div>
-<nav>
-	<a href="file:///Users/wendy/Desktop/413000802/index2.html" style="color:hotpink;">113下學期課表</a>
-	<a href="file:///Users/wendy/Desktop/413000802/index3.html"  style="color:hotpink;">我的經歷</a>
-	<a href="file:///Users/wendy/Desktop/413000802/index4.html" style="color:hotpink;">歌詞</a>
-</nav>
+  <div class="navigation">
+    <a href="https://g.co/kgs/AUe468M">Kaohsiung</a> |
+    <a href="https://g.co/kgs/qfu2G1v">Taipei</a>
+  </div>
 
+  <nav>
+  	<a href="file:///Users/wendy/Desktop/413000802/index4.html">愛好</a>
+    <a href="file:///Users/wendy/Desktop/413000802/index2.html">113下學期課表</a>
+    <a href="file:///Users/wendy/Desktop/413000802/index3.html">我的經歷</a>
+  </nav>
 
-<div class="container">
-	<aside><h2 style=" color:tomato; font-size:190%;" >自我介紹</h2></aside>
-	<li>我是洪鈺婷，高雄人，今年20歲，MBTI是INFP，星座是水瓶座&#128509;。</li>
-	
-	<p><li>興趣是聽音樂、看演唱會、追劇、動漫和綜藝。</li></p></ul>
-	<section><h3 style="color:tomato; font-size:190%; ">照片分享</h3></section>
-	<img src="me.JPG" width="150px" height="200px">
-</div>
+  <div class="container">
+    <aside>
+      <h2 style="color:tomato; font-size: 2em; font-weight: bold; text-shadow: 1px 1px white;">自我介紹</h2>
+      <ul>
+        <li>我是洪鈺婷，高雄人，今年 20 歲，MBTI 是 INFP，星座是水瓶座 💫</li>
+        <li>興趣是聽音樂、看演唱會、追劇、動漫和綜藝。</li>
+      </ul>
+    </aside>
 
-<footer><h6  style="color:tomato; font-size:190%">新增三個沒教過的tags</h6></footer>
-	<ul style="color:hotpink; font-size:160%">
-		<li>html colors</li>
-		<li>html styles</li>
-		<li>html emojis</li>	
+    <section>
+      <h3 style="color:tomato; font-size: 1.5em;">照片分享</h3>
+      <img src="me.JPG" alt="我的照片">
+    </section>
+  </div>
 
+  <footer>
+    <h6 style="color:tomato; font-size:1.5em;">感謝參觀我的網站！</h6>
+    <ul style="color:hotpink; font-size:1.2em;">
+    </ul>
+  </footer>
+</body>
 </html>
